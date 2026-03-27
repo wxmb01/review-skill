@@ -25,6 +25,24 @@ It helps answer questions like:
 Unlike a narrow code-style reviewer, `Review` is designed to judge evidence, completion, readiness, and risk.
 It is read-only by default for review requests.
 
+## Visual Overview
+
+![Review overview in English](./assets/overview-en.svg)
+
+Download-ready image assets:
+
+- [English overview PNG](./assets/overview-en.png)
+- [Chinese overview PNG](./assets/overview-zh-CN.png)
+
+### Social Preview Assets
+
+These files are ready to use as GitHub social preview images. PNG is recommended for the repository settings page, and SVG source files are included for further editing.
+
+- [English social preview PNG](./assets/social-preview-en.png)
+- [Chinese social preview PNG](./assets/social-preview-zh-CN.png)
+- [English social preview SVG source](./assets/social-preview-en.svg)
+- [Chinese social preview SVG source](./assets/social-preview-zh-CN.svg)
+
 ## What It Covers
 
 ### Review Scopes
@@ -110,6 +128,14 @@ Depending on the request, the skill can produce:
 ## Repository Layout
 
 ```text
+.github/
+  ISSUE_TEMPLATE/
+    bug_report.yml
+    config.yml
+    feature_request.yml
+  PULL_REQUEST_TEMPLATE.md
+CONTRIBUTING.md
+SECURITY.md
 review/
   SKILL.md
   agents/
@@ -119,8 +145,21 @@ review/
     review-playbook.md
     review-templates.md
 assets/
+  overview-en.png
+  overview-en.svg
+  overview-zh-CN.png
+  overview-zh-CN.svg
   review-banner.svg
+  social-preview-en.png
+  social-preview-en.svg
+  social-preview-zh-CN.png
+  social-preview-zh-CN.svg
 ```
+
+## Community
+
+- [Contributing guide](./CONTRIBUTING.md)
+- [Security policy](./SECURITY.md)
 
 ## License
 

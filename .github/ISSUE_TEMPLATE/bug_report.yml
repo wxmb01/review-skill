@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a problem with the Review skill, its docs, or its packaged assets.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to report an issue.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+      placeholder: The skill classified this as ready even though...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Skill logic
+        - README / docs
+        - Templates
+        - Visual assets
+        - Repository packaging
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt or scenario
+      description: Share the prompt, repo context, or artifact that exposed the issue.
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: List the steps needed to reproduce the problem.
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Explain why this matters.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Extra notes
+      description: Add screenshots, examples, or related links if helpful.

@@ -1,0 +1,66 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111D"/>
+      <stop offset="0.5" stop-color="#0D243C"/>
+      <stop offset="1" stop-color="#1D5F72"/>
+    </linearGradient>
+    <linearGradient id="title" x1="80" y1="70" x2="520" y2="160" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6FFFE9"/>
+      <stop offset="1" stop-color="#F4D35E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1200" rx="28" fill="url(#bg)"/>
+  <circle cx="1370" cy="150" r="190" fill="#6FFFE9" fill-opacity="0.07"/>
+  <circle cx="1500" cy="1030" r="250" fill="#F4D35E" fill-opacity="0.07"/>
+  <text x="78" y="122" fill="url(#title)" font-size="76" font-family="Segoe UI, Arial, sans-serif" font-weight="800">Review Skill</text>
+  <text x="82" y="172" fill="#D7E3F4" font-size="28" font-family="Segoe UI, Arial, sans-serif">Evidence-based project review for code, readiness, architecture, requirements, risk, and documentation.</text>
+
+  <rect x="78" y="226" width="464" height="250" rx="24" fill="#FFFFFF" fill-opacity="0.08"/>
+  <text x="110" y="274" fill="#FFFFFF" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">1. Review Scopes</text>
+  <text x="110" y="324" fill="#D7E3F4" font-size="22" font-family="Segoe UI, Arial, sans-serif">change</text>
+  <text x="240" y="324" fill="#A8C2DA" font-size="20" font-family="Segoe UI, Arial, sans-serif">PRs, commits, diffs, patch sets</text>
+  <text x="110" y="364" fill="#D7E3F4" font-size="22" font-family="Segoe UI, Arial, sans-serif">project</text>
+  <text x="240" y="364" fill="#A8C2DA" font-size="20" font-family="Segoe UI, Arial, sans-serif">full repositories, systems, delivery states</text>
+  <text x="110" y="404" fill="#D7E3F4" font-size="22" font-family="Segoe UI, Arial, sans-serif">artifact</text>
+  <text x="240" y="404" fill="#A8C2DA" font-size="20" font-family="Segoe UI, Arial, sans-serif">specs, plans, reports, design notes</text>
+  <text x="110" y="448" fill="#FFFFFF" fill-opacity="0.75" font-size="18" font-family="Segoe UI, Arial, sans-serif">Scope is chosen before mode so a diff review does not turn into a vague project audit.</text>
+
+  <rect x="564" y="226" width="462" height="250" rx="24" fill="#FFFFFF" fill-opacity="0.08"/>
+  <text x="596" y="274" fill="#FFFFFF" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">2. Review Modes</text>
+  <text x="596" y="324" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">project • readiness • architecture • code</text>
+  <text x="596" y="364" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">requirements • risk • documentation</text>
+  <text x="596" y="420" fill="#A8C2DA" font-size="20" font-family="Segoe UI, Arial, sans-serif">Pick one primary mode and only the supporting modes needed</text>
+  <text x="596" y="452" fill="#A8C2DA" font-size="20" font-family="Segoe UI, Arial, sans-serif">to answer the user's real question with evidence.</text>
+
+  <rect x="1048" y="226" width="474" height="250" rx="24" fill="#FFFFFF" fill-opacity="0.08"/>
+  <text x="1080" y="274" fill="#FFFFFF" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">3. Core Discipline</text>
+  <text x="1080" y="324" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">Read-only by default</text>
+  <text x="1080" y="360" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">Evidence floor before strong verdicts</text>
+  <text x="1080" y="396" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">Readiness gates before “ready”</text>
+  <text x="1080" y="432" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">Blocker / high / medium / low severity</text>
+
+  <rect x="78" y="512" width="708" height="286" rx="24" fill="#FFFFFF" fill-opacity="0.08"/>
+  <text x="110" y="560" fill="#FFFFFF" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">4. Typical Workflow</text>
+  <text x="110" y="614" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">1. Set target, scope, and delivery stage</text>
+  <text x="110" y="650" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">2. Pick depth: quick / standard / deep</text>
+  <text x="110" y="686" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">3. Gather evidence from code, tests, configs, docs, CI, and artifacts</text>
+  <text x="110" y="722" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">4. Classify findings as confirmed issues, likely risks, or evidence gaps</text>
+  <text x="110" y="758" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">5. Produce a completion verdict and next actions</text>
+
+  <rect x="814" y="512" width="708" height="286" rx="24" fill="#FFFFFF" fill-opacity="0.08"/>
+  <text x="846" y="560" fill="#FFFFFF" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">5. What It Can Output</text>
+  <text x="846" y="614" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">• Severity-ordered findings</text>
+  <text x="846" y="650" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">• Completion verdicts and readiness scorecards</text>
+  <text x="846" y="686" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">• Risk registers and requirements gap reports</text>
+  <text x="846" y="722" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">• Architecture tradeoff notes</text>
+  <text x="846" y="758" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">• Remediation roadmaps and validation plans</text>
+
+  <rect x="78" y="834" width="1444" height="286" rx="24" fill="#FFFFFF" fill-opacity="0.08"/>
+  <text x="110" y="882" fill="#FFFFFF" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">6. Example Prompts</text>
+  <text x="110" y="934" fill="#D7E3F4" font-size="20" font-family="Consolas, Segoe UI Mono, monospace">Use $review to review this PR in change scope and tell me whether it is safe to merge.</text>
+  <text x="110" y="982" fill="#D7E3F4" font-size="20" font-family="Consolas, Segoe UI Mono, monospace">Use $review to assess this project for completion, risks, and next improvements.</text>
+  <text x="110" y="1030" fill="#D7E3F4" font-size="20" font-family="Consolas, Segoe UI Mono, monospace">Use $review to perform a readiness review and tell me whether this project is ready to release.</text>
+  <text x="110" y="1078" fill="#D7E3F4" font-size="20" font-family="Consolas, Segoe UI Mono, monospace">Use $review to inspect this design document in artifact scope and identify ambiguity and major risks.</text>
+  <text x="1092" y="1148" fill="#FFFFFF" fill-opacity="0.74" font-size="18" font-family="Segoe UI, Arial, sans-serif">github.com/wxmb01/review-skill</text>
+</svg>

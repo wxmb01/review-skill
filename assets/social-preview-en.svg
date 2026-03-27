@@ -1,0 +1,35 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08121F"/>
+      <stop offset="0.52" stop-color="#0F2742"/>
+      <stop offset="1" stop-color="#1E5F74"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="96" y1="82" x2="450" y2="164" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6FFFE9"/>
+      <stop offset="1" stop-color="#F4D35E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" rx="28" fill="url(#bg)"/>
+  <circle cx="1106" cy="124" r="154" fill="#6FFFE9" fill-opacity="0.08"/>
+  <circle cx="1218" cy="542" r="220" fill="#F4D35E" fill-opacity="0.08"/>
+  <rect x="92" y="70" width="176" height="38" rx="19" fill="#6FFFE9" fill-opacity="0.14"/>
+  <text x="116" y="95" fill="#6FFFE9" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="700">OPEN SOURCE SKILL</text>
+  <text x="90" y="190" fill="white" font-size="88" font-family="Segoe UI, Arial, sans-serif" font-weight="800">Review</text>
+  <text x="92" y="240" fill="url(#accent)" font-size="34" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Project • Code • Readiness • Architecture • Risk</text>
+  <text x="92" y="308" fill="#D7E3F4" font-size="28" font-family="Segoe UI, Arial, sans-serif">Evidence-based review skill for pull requests, full project audits,</text>
+  <text x="92" y="348" fill="#D7E3F4" font-size="28" font-family="Segoe UI, Arial, sans-serif">design artifacts, release readiness, and remediation planning.</text>
+  <rect x="92" y="408" width="326" height="124" rx="22" fill="#FFFFFF" fill-opacity="0.08"/>
+  <text x="120" y="448" fill="#FFFFFF" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Scopes</text>
+  <text x="120" y="486" fill="#D7E3F4" font-size="22" font-family="Segoe UI, Arial, sans-serif">change   project   artifact</text>
+  <text x="120" y="518" fill="#A8C2DA" font-size="18" font-family="Segoe UI, Arial, sans-serif">Diff reviews, repository audits, document reviews</text>
+  <rect x="446" y="408" width="334" height="124" rx="22" fill="#FFFFFF" fill-opacity="0.08"/>
+  <text x="474" y="448" fill="#FFFFFF" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Modes</text>
+  <text x="474" y="486" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">code   readiness   architecture</text>
+  <text x="474" y="518" fill="#A8C2DA" font-size="18" font-family="Segoe UI, Arial, sans-serif">requirements   risk   documentation</text>
+  <rect x="808" y="408" width="378" height="124" rx="22" fill="#FFFFFF" fill-opacity="0.08"/>
+  <text x="836" y="448" fill="#FFFFFF" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Outputs</text>
+  <text x="836" y="486" fill="#D7E3F4" font-size="21" font-family="Segoe UI, Arial, sans-serif">Findings • Scorecards • Risk Registers</text>
+  <text x="836" y="518" fill="#A8C2DA" font-size="18" font-family="Segoe UI, Arial, sans-serif">Roadmaps • Go/No-Go summaries • Requirements gaps</text>
+  <text x="92" y="590" fill="#FFFFFF" fill-opacity="0.74" font-size="18" font-family="Segoe UI, Arial, sans-serif">github.com/wxmb01/review-skill</text>
+</svg>

@@ -1,0 +1,46 @@
+name: Feature request
+description: Suggest an improvement to the Review skill, docs, templates, or release assets.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for sharing an idea.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this solve?
+      placeholder: The skill is strong on project review, but weaker on...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Describe the feature, new template, or change in behavior you want.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Review logic
+        - Requirements / readiness
+        - Architecture / risk
+        - Docs / examples
+        - Visual presentation
+        - Repository workflow
+    validations:
+      required: true
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Tradeoffs or concerns
+      description: Note any downsides, risks, or compatibility concerns.
+  - type: textarea
+    id: context
+    attributes:
+      label: Extra context
+      description: Link related issues, examples, or reference skills if useful.

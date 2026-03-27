@@ -25,6 +25,24 @@
 和只关注代码风格的 review 不同，`Review` 更强调证据、完成度、就绪门槛和风险判断。  
 在 review 请求下，它默认只读分析，不会擅自改文件。
 
+## 可视化介绍
+
+![Review 中文介绍图](./assets/overview-zh-CN.svg)
+
+可直接下载使用的图片版本：
+
+- [英文介绍图 PNG](./assets/overview-en.png)
+- [中文介绍图 PNG](./assets/overview-zh-CN.png)
+
+### Social Preview 资源
+
+下面这些文件已经可以直接作为 GitHub 仓库的 social preview 使用。仓库设置页更建议上传 PNG，SVG 源文件也一并保留，方便你后续继续改图：
+
+- [英文 social preview PNG](./assets/social-preview-en.png)
+- [中文 social preview PNG](./assets/social-preview-zh-CN.png)
+- [英文 social preview SVG 源文件](./assets/social-preview-en.svg)
+- [中文 social preview SVG 源文件](./assets/social-preview-zh-CN.svg)
+
 ## 它覆盖哪些场景
 
 ### Review 范围
@@ -110,6 +128,14 @@ Use $review to review this design document in artifact scope and identify ambigu
 ## 仓库结构
 
 ```text
+.github/
+  ISSUE_TEMPLATE/
+    bug_report.yml
+    config.yml
+    feature_request.yml
+  PULL_REQUEST_TEMPLATE.md
+CONTRIBUTING.md
+SECURITY.md
 review/
   SKILL.md
   agents/
@@ -119,8 +145,21 @@ review/
     review-playbook.md
     review-templates.md
 assets/
+  overview-en.png
+  overview-en.svg
+  overview-zh-CN.png
+  overview-zh-CN.svg
   review-banner.svg
+  social-preview-en.png
+  social-preview-en.svg
+  social-preview-zh-CN.png
+  social-preview-zh-CN.svg
 ```
+
+## 协作说明
+
+- [贡献指南](./CONTRIBUTING.md)
+- [安全策略](./SECURITY.md)
 
 ## 许可证
 
