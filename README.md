@@ -62,6 +62,7 @@ Download-ready overview assets:
 | Evidence floors | findings need proof, not vibes or vague confidence |
 | Readiness gates | `ready` is treated as a claim that must be earned |
 | Severity and risk framing | blocker, high, medium, low plus security, privacy, compliance, performance, and reliability |
+| Code review rigor | diff-first workflow, high-risk change heuristics, and verification of automated findings |
 | Reusable deliverables | scorecards, risk registers, gap reports, and roadmaps instead of loose commentary |
 
 ## Review Modes
@@ -71,7 +72,7 @@ Download-ready overview assets:
 | `project` | end-to-end repository or product review |
 | `readiness` | submission, release, and delivery decisions |
 | `architecture` | structure, boundaries, tradeoffs, and scalability |
-| `code` | implementation quality, correctness, and maintainability |
+| `code` | diff-first implementation review with regression, validation, and high-risk change analysis |
 | `requirements` | coverage, ambiguity, acceptance criteria, and prioritization |
 | `risk` | security, privacy, compliance, performance, and reliability |
 | `documentation` | clarity, consistency, and handoff quality |
@@ -144,6 +145,7 @@ review/
     openai.yaml
   references/
     review-axes.md
+    review-code.md
     review-playbook.md
     review-templates.md
 assets/

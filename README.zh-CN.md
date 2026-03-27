@@ -144,6 +144,7 @@ review/
     openai.yaml
   references/
     review-axes.md
+    review-code.md
     review-playbook.md
     review-templates.md
 assets/

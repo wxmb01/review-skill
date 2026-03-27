@@ -25,6 +25,12 @@ Before line-by-line review, establish:
 
 If the change is very large or bundles unrelated concerns, say so and recommend splitting when that would materially improve review quality.
 
+Use these rough review-size heuristics:
+
+- under ~200 changed lines: normal review flow
+- 200 to 400 changed lines: extra caution on hidden impact
+- above ~400 changed lines: explicitly consider whether the change should be split
+
 ### 2. Do a High-Level Pass
 
 Check:
@@ -90,6 +96,100 @@ Review the code across these lenses:
 - hidden dependencies
 - code that is hard to test or reason about
 - places where the change fights the language or framework conventions
+
+## High-Risk Change Types
+
+Increase scrutiny when the diff touches one of these areas:
+
+### API Or Contract Changes
+
+Check:
+
+- backward compatibility
+- versioning expectations
+- client impact
+- serialization and validation behavior
+- docs or changelog updates
+
+### Data Model Or Migration Changes
+
+Check:
+
+- forward and backward migration safety
+- partial-failure behavior
+- data backfill assumptions
+- rollback plan
+- production-scale performance
+
+### Auth, Permissions, Or Sensitive Data
+
+Check:
+
+- access control before every sensitive action
+- default-deny behavior
+- secret or token handling
+- logging of sensitive material
+- abuse or privilege-escalation paths
+
+### Dependency, Build, Or Runtime Config Changes
+
+Check:
+
+- version compatibility
+- lockfile and config drift
+- deployment impact
+- environment variable requirements
+- whether rollback becomes harder
+
+### Concurrency Or Background Processing Changes
+
+Check:
+
+- idempotency
+- retries and duplicate work
+- ordering assumptions
+- stale reads and races
+- cleanup on failure
+
+## Automated Finding Verification
+
+When the review input includes bot comments, scanner output, or static analysis findings:
+
+1. Verify the finding still applies to the current code.
+2. Read the surrounding code instead of trusting the reported line in isolation.
+3. Distinguish true positive, stale finding, and false positive.
+4. Prefer explaining the real failure mode over repeating the tool wording.
+5. If the tool is directionally right but technically imprecise, rewrite the finding in accurate terms.
+
+Do not treat automated findings as self-proving evidence.
+
+## Common Language Hotspots
+
+Use these as prompts, not as a replacement for reasoning.
+
+### Python
+
+- mutable default arguments
+- broad `except:` blocks
+- shared mutable class attributes
+- context-manager or cleanup gaps
+- async code that forgets cancellation or exception paths
+
+### TypeScript Or JavaScript
+
+- unsafe `any` or unchecked casts
+- stale closures in async or UI code
+- unhandled promises
+- mutation of props, shared objects, or external state
+- missing runtime validation at trust boundaries
+
+### SQL And Data Access
+
+- string-built queries
+- missing transaction boundaries
+- N+1 query patterns
+- missing indexes for new access paths
+- mismatch between application assumptions and schema constraints
 
 ### 4. Review Tests As First-Class Evidence
 
@@ -174,6 +274,17 @@ Do not:
 - bury blocker findings under nits
 - demand perfect architecture in a localized fix
 - widen scope without saying why
+
+## What Not To Review Manually
+
+Prefer automation for:
+
+- formatting
+- import ordering
+- trivial lint fixes
+- mechanically enforceable style rules
+
+Manual review time should go to reasoning, risk, design, and validation quality.
 
 ## Escalation Triggers
 
