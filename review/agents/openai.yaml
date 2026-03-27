@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review"
+  short_description: "Review projects across scope, code, risks, and readiness."
+  default_prompt: "Use $review to assess this project for completion, risks, and next improvements."
