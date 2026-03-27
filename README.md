@@ -1,18 +1,20 @@
+![Review Skill Banner](./assets/review-banner.svg)
+
 # Review Skill
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](./LICENSE)
 [![Release](https://img.shields.io/github/v/release/wxmb01/review-skill?style=flat-square)](https://github.com/wxmb01/review-skill/releases)
 [![Stars](https://img.shields.io/github/stars/wxmb01/review-skill?style=flat-square)](https://github.com/wxmb01/review-skill/stargazers)
 
-Open review skill for project review, code review, readiness review, architecture review, requirements review, risk review, and documentation review.
+Open review skill for project, code, readiness, architecture, requirements, risk, and documentation review.
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
-## Why This Skill Exists
+## At a Glance
 
-Normal code review is often too narrow for real project decisions.
+`Review` is built for the moments when a normal code review is too narrow.
 
-`Review` is built for questions like:
+It helps answer questions like:
 
 - Is this project actually complete?
 - Is this change safe to merge?
@@ -20,17 +22,18 @@ Normal code review is often too narrow for real project decisions.
 - What are the biggest risks?
 - What should be fixed first?
 
-It is read-only by default for review requests, and it is designed to judge evidence, completion, readiness, and risk instead of only commenting on code style.
+Unlike a narrow code-style reviewer, `Review` is designed to judge evidence, completion, readiness, and risk.
+It is read-only by default for review requests.
 
 ## What It Covers
 
 ### Review Scopes
 
-| Scope | Use it for |
-| --- | --- |
-| `change` | PRs, commits, diffs, patch sets, and uncommitted changes |
-| `project` | Full repositories, products, systems, and delivery-state audits |
-| `artifact` | Specs, plans, reports, architecture notes, and design documents |
+| Scope | Best for | Typical output |
+| --- | --- | --- |
+| `change` | PRs, commits, diffs, patch sets, uncommitted changes | merge recommendation, regression findings, impacted areas |
+| `project` | Whole repositories, products, systems, delivery-state audits | completion verdict, readiness summary, remediation roadmap |
+| `artifact` | Specs, plans, reports, architecture notes, design documents | ambiguity list, requirements gaps, tradeoff notes |
 
 ### Review Modes
 
@@ -42,28 +45,28 @@ It is read-only by default for review requests, and it is designed to judge evid
 - `risk`
 - `documentation`
 
-## Key Features
+## What Makes It Different
 
-- Read-only by default for review requests
-- Scope routing before review mode selection
-- Evidence-based completion and readiness judgment
-- Severity ladder with blocker and high-risk handling
-- Readiness gates and optional scorecard
-- Risk subdomains for security, privacy, compliance, performance, and reliability
-- Reusable review templates for diff reviews, go/no-go summaries, risk registers, and remediation roadmaps
+- Routes by scope before mode, so PR review and full-project audit are treated differently
+- Uses evidence floors and readiness gates instead of vague impressions
+- Supports blocker/high/medium/low severity judgment
+- Splits risk into security, privacy, compliance, performance, and reliability
+- Includes reusable templates for go/no-go reviews, risk registers, requirements gaps, and remediation plans
 
-## What You Get
+## Use It When
 
-Depending on the request, the skill can produce:
+- You need more than style feedback
+- You need a completion or readiness verdict
+- You need a diff review with impact and regression thinking
+- You need to review a design document or project plan
+- You need a structured risk or requirements review
 
-- severity-ordered findings
-- completion verdicts
-- readiness gate summaries
-- risk registers
-- requirements gap reports
-- architecture tradeoff notes
-- remediation roadmaps
-- validation plans
+## Do Not Use It As
+
+- a replacement for linting
+- a purely cosmetic refactoring assistant
+- proof that a system is safe without real evidence
+- a reason to skip tests, QA, or release checks
 
 ## Installation
 
@@ -91,6 +94,19 @@ Use $review to perform a readiness review and tell me whether this project is re
 Use $review to review this design document in artifact scope and identify ambiguity, missing acceptance criteria, and major risks.
 ```
 
+## Outputs You Can Expect
+
+Depending on the request, the skill can produce:
+
+- severity-ordered findings
+- completion verdicts
+- readiness gate summaries
+- risk registers
+- requirements gap reports
+- architecture tradeoff notes
+- remediation roadmaps
+- validation plans
+
 ## Repository Layout
 
 ```text
@@ -102,6 +118,8 @@ review/
     review-axes.md
     review-playbook.md
     review-templates.md
+assets/
+  review-banner.svg
 ```
 
 ## License

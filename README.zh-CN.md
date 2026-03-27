@@ -1,3 +1,5 @@
+![Review Skill Banner](./assets/review-banner.svg)
+
 # Review Skill
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](./LICENSE)
@@ -8,9 +10,11 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
-## 这个 Skill 解决什么问题
+## 一眼看懂它做什么
 
-普通代码审查通常只盯着代码实现本身，但很多真实问题其实是：
+`Review` 是为“普通代码审查已经不够用”的场景设计的。
+
+它重点回答这类问题：
 
 - 这个项目到底做完了吗？
 - 这次改动可以安全合并吗？
@@ -18,18 +22,18 @@
 - 最大的风险在哪里？
 - 应该优先修什么？
 
-`Review` 就是为这些问题设计的。  
-它在 review 场景下默认只读，不会擅自修改文件；它更强调证据、完成度、就绪门槛和风险判断，而不只是代码风格评论。
+和只关注代码风格的 review 不同，`Review` 更强调证据、完成度、就绪门槛和风险判断。  
+在 review 请求下，它默认只读分析，不会擅自改文件。
 
 ## 它覆盖哪些场景
 
 ### Review 范围
 
-| 范围 | 适用场景 |
-| --- | --- |
-| `change` | PR、commit、diff、patch、未提交改动 |
-| `project` | 整个仓库、完整项目、服务系统、交付状态 |
-| `artifact` | 需求文档、设计文档、计划、报告、检查表 |
+| 范围 | 最适合的场景 | 常见输出 |
+| --- | --- | --- |
+| `change` | PR、commit、diff、patch、未提交改动 | 合并建议、回归风险、影响范围 |
+| `project` | 整个仓库、完整项目、服务系统、交付状态 | 完成度结论、就绪摘要、整改路线图 |
+| `artifact` | 需求文档、设计文档、计划、报告、检查表 | 歧义清单、需求缺口、取舍说明 |
 
 ### Review 模式
 
@@ -41,28 +45,28 @@
 - `risk`
 - `documentation`
 
-## 核心能力
+## 它和普通 Review 的区别
 
-- review 请求默认只读分析
 - 先判断 review 范围，再判断 review 模式
-- 基于证据判断完成度和就绪度
-- 支持严重级别和 blocker/high 风险判断
-- 支持 readiness gates 和可选 scorecard
-- 支持安全、隐私、合规、性能、可靠性等风险子域
-- 提供 diff review、go/no-go、risk register、整改路线图等模板
+- 用证据底线和 readiness gates 做判断，而不是只凭感觉
+- 支持 blocker/high/medium/low 严重级别
+- 风险会继续拆成安全、隐私、合规、性能、可靠性
+- 自带 go/no-go、risk register、requirements gaps、整改路线图等模板
 
-## 能输出什么
+## 适合什么时候用
 
-按不同任务，它可以输出：
+- 你需要的不只是代码风格反馈
+- 你想判断项目是否真正完成
+- 你想审查一次改动是否安全
+- 你想判断能不能提交、上线、交付
+- 你想审查设计文档、计划或需求是否靠谱
 
-- 按严重级别排序的问题列表
-- 完成度结论
-- 就绪门槛摘要
-- 风险登记表
-- 需求缺口报告
-- 架构取舍说明
-- 整改路线图
-- 验证计划
+## 不适合把它当成
+
+- lint 的替代品
+- 单纯的代码美化工具
+- 没有证据时替代 QA 的“安全证明”
+- 跳过测试、发布检查或人工判断的理由
 
 ## 安装方式
 
@@ -90,6 +94,19 @@ Use $review to perform a readiness review and tell me whether this project is re
 Use $review to review this design document in artifact scope and identify ambiguity, missing acceptance criteria, and major risks.
 ```
 
+## 你通常会得到什么输出
+
+按任务不同，它可以输出：
+
+- 按严重级别排序的问题列表
+- 完成度结论
+- 就绪门槛摘要
+- 风险登记表
+- 需求缺口报告
+- 架构取舍说明
+- 整改路线图
+- 验证计划
+
 ## 仓库结构
 
 ```text
@@ -101,6 +118,8 @@ review/
     review-axes.md
     review-playbook.md
     review-templates.md
+assets/
+  review-banner.svg
 ```
 
 ## 许可证

@@ -1,0 +1,31 @@
+<svg width="1280" height="320" viewBox="0 0 1280 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B132B"/>
+      <stop offset="0.48" stop-color="#12355B"/>
+      <stop offset="1" stop-color="#1E5F74"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="180" y1="72" x2="480" y2="168" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6FFFE9"/>
+      <stop offset="1" stop-color="#F4D35E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="320" rx="24" fill="url(#bg)"/>
+  <circle cx="1068" cy="72" r="118" fill="#6FFFE9" fill-opacity="0.08"/>
+  <circle cx="1186" cy="268" r="176" fill="#F4D35E" fill-opacity="0.08"/>
+  <rect x="74" y="58" width="152" height="34" rx="17" fill="#6FFFE9" fill-opacity="0.14"/>
+  <text x="96" y="80" fill="#6FFFE9" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="700">OPEN SOURCE SKILL</text>
+  <text x="72" y="142" fill="white" font-size="68" font-family="Segoe UI, Arial, sans-serif" font-weight="800">Review</text>
+  <text x="72" y="182" fill="url(#accent)" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Project • Code • Readiness • Architecture • Risk</text>
+  <text x="72" y="224" fill="#D7E3F4" font-size="24" font-family="Segoe UI, Arial, sans-serif">Evidence-based review skill for diff checks, full project audits,</text>
+  <text x="72" y="258" fill="#D7E3F4" font-size="24" font-family="Segoe UI, Arial, sans-serif">release readiness, requirements gaps, and remediation planning.</text>
+  <rect x="72" y="274" width="178" height="20" rx="10" fill="#6FFFE9" fill-opacity="0.18"/>
+  <rect x="258" y="274" width="172" height="20" rx="10" fill="#F4D35E" fill-opacity="0.18"/>
+  <rect x="438" y="274" width="194" height="20" rx="10" fill="#FFFFFF" fill-opacity="0.12"/>
+  <text x="786" y="102" fill="#FFFFFF" fill-opacity="0.86" font-size="20" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Scopes</text>
+  <text x="786" y="134" fill="#D7E3F4" font-size="18" font-family="Segoe UI, Arial, sans-serif">change   project   artifact</text>
+  <text x="786" y="188" fill="#FFFFFF" fill-opacity="0.86" font-size="20" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Modes</text>
+  <text x="786" y="220" fill="#D7E3F4" font-size="18" font-family="Segoe UI, Arial, sans-serif">code   readiness   architecture   requirements   risk</text>
+  <text x="786" y="274" fill="#FFFFFF" fill-opacity="0.86" font-size="20" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Outputs</text>
+  <text x="786" y="304" fill="#D7E3F4" font-size="18" font-family="Segoe UI, Arial, sans-serif">findings   scorecards   risk registers   roadmaps</text>
+</svg>
