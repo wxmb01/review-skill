@@ -121,6 +121,17 @@ Social preview assets for GitHub and social sharing:
 npx skills add https://github.com/wxmb01/review-skill --skill review -g -y
 ```
 
+## Local Codex Sync
+
+If you maintain this repository locally and also use the installed Codex skill at `~/.codex/skills/review`, this repo now includes a built-in sync script:
+
+```bash
+powershell -ExecutionPolicy Bypass -File .\scripts\sync-to-codex.ps1
+```
+
+The repository also includes local Git hooks in `.githooks/` for `post-commit`, `post-checkout`, `post-merge`, and `post-rewrite`.
+When `core.hooksPath` is configured to `.githooks`, local updates and pulled changes will automatically sync the repo's `review/` folder back into the installed Codex skill directory.
+
 ## Open Source Workflow
 
 - [Contributing guide](./CONTRIBUTING.md)
@@ -148,6 +159,13 @@ review/
     review-code.md
     review-playbook.md
     review-templates.md
+scripts/
+  sync-to-codex.ps1
+.githooks/
+  post-checkout
+  post-commit
+  post-merge
+  post-rewrite
 assets/
   overview-en.png
   overview-en.svg

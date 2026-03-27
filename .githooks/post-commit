@@ -1,0 +1,7 @@
+#!/bin/sh
+
+REPO_ROOT="$(git rev-parse --show-toplevel 2>/dev/null)" || exit 0
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$REPO_ROOT/scripts/sync-to-codex.ps1" -Quiet >/dev/null 2>&1 || {
+  echo "warning: failed to sync review skill to Codex after commit" >&2
+}
+exit 0
