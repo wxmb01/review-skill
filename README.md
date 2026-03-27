@@ -1,8 +1,18 @@
 # Review Skill
 
-`Review` is an open skill for project review, code review, readiness review, architecture review, requirements review, risk review, and documentation review.
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](./LICENSE)
+[![Release](https://img.shields.io/github/v/release/wxmb01/review-skill?style=flat-square)](https://github.com/wxmb01/review-skill/releases)
+[![Stars](https://img.shields.io/github/stars/wxmb01/review-skill?style=flat-square)](https://github.com/wxmb01/review-skill/stargazers)
 
-It is designed for cases where a normal code review is not enough and you need a clearer answer to questions like:
+Open review skill for project review, code review, readiness review, architecture review, requirements review, risk review, and documentation review.
+
+[English](./README.md) | [简体中文](./README.zh-CN.md)
+
+## Why This Skill Exists
+
+Normal code review is often too narrow for real project decisions.
+
+`Review` is built for questions like:
 
 - Is this project actually complete?
 - Is this change safe to merge?
@@ -10,15 +20,19 @@ It is designed for cases where a normal code review is not enough and you need a
 - What are the biggest risks?
 - What should be fixed first?
 
-## What It Does
+It is read-only by default for review requests, and it is designed to judge evidence, completion, readiness, and risk instead of only commenting on code style.
 
-The skill supports:
+## What It Covers
 
-- `change` scope for PR, commit, diff, and patch review
-- `project` scope for full repository or delivery-state review
-- `artifact` scope for reviewing specs, plans, reports, and design documents
+### Review Scopes
 
-It also supports these review modes:
+| Scope | Use it for |
+| --- | --- |
+| `change` | PRs, commits, diffs, patch sets, and uncommitted changes |
+| `project` | Full repositories, products, systems, and delivery-state audits |
+| `artifact` | Specs, plans, reports, architecture notes, and design documents |
+
+### Review Modes
 
 - `project`
 - `readiness`
@@ -36,32 +50,30 @@ It also supports these review modes:
 - Severity ladder with blocker and high-risk handling
 - Readiness gates and optional scorecard
 - Risk subdomains for security, privacy, compliance, performance, and reliability
-- Reusable review templates for common deliverables
+- Reusable review templates for diff reviews, go/no-go summaries, risk registers, and remediation roadmaps
 
-## Repository Layout
+## What You Get
 
-```text
-review/
-  SKILL.md
-  agents/
-    openai.yaml
-  references/
-    review-axes.md
-    review-playbook.md
-    review-templates.md
-```
+Depending on the request, the skill can produce:
+
+- severity-ordered findings
+- completion verdicts
+- readiness gate summaries
+- risk registers
+- requirements gap reports
+- architecture tradeoff notes
+- remediation roadmaps
+- validation plans
 
 ## Installation
 
-After publishing this repository to GitHub, install the skill with:
+Install directly from GitHub:
 
 ```bash
 npx skills add https://github.com/wxmb01/review-skill --skill review -g -y
 ```
 
 ## Example Prompts
-
-Use the skill like this:
 
 ```text
 Use $review to assess this project for completion, risks, and next improvements.
@@ -79,18 +91,19 @@ Use $review to perform a readiness review and tell me whether this project is re
 Use $review to review this design document in artifact scope and identify ambiguity, missing acceptance criteria, and major risks.
 ```
 
-## Output Shapes
+## Repository Layout
 
-The skill can produce:
-
-- severity-ordered findings
-- completion verdicts
-- readiness gate summaries
-- risk registers
-- requirements gap reports
-- architecture tradeoff notes
-- remediation roadmaps
+```text
+review/
+  SKILL.md
+  agents/
+    openai.yaml
+  references/
+    review-axes.md
+    review-playbook.md
+    review-templates.md
+```
 
 ## License
 
-This repository is released under the MIT License.
+Released under the MIT License.
