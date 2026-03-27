@@ -2,6 +2,12 @@
 
 Use this reference when the request is mainly about changed code, implementation quality, pull requests, commits, or regression risk.
 
+When the stack is clear, also load the matching specialized reference:
+
+- `review-code-typescript-react.md` for TypeScript, React, and frontend-heavy reviews
+- `review-code-python.md` for Python and async service reviews
+- `review-code-java.md` for Java and Spring-style backend reviews
+
 ## Reviewer Posture
 
 - Review the work, not the author.
@@ -190,6 +196,8 @@ Use these as prompts, not as a replacement for reasoning.
 - N+1 query patterns
 - missing indexes for new access paths
 - mismatch between application assumptions and schema constraints
+
+For deeper stack-specific checks, defer to the specialized reference files instead of trying to keep every language rule in this document.
 
 ### 4. Review Tests As First-Class Evidence
 

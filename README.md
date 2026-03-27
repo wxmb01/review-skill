@@ -62,7 +62,7 @@ Download-ready overview assets:
 | Evidence floors | findings need proof, not vibes or vague confidence |
 | Readiness gates | `ready` is treated as a claim that must be earned |
 | Severity and risk framing | blocker, high, medium, low plus security, privacy, compliance, performance, and reliability |
-| Code review rigor | diff-first workflow, high-risk change heuristics, and verification of automated findings |
+| Code review rigor | diff-first workflow, high-risk change heuristics, automated-finding verification, and language-specific review guides |
 | Reusable deliverables | scorecards, risk registers, gap reports, and roadmaps instead of loose commentary |
 
 ## Review Modes
@@ -72,7 +72,7 @@ Download-ready overview assets:
 | `project` | end-to-end repository or product review |
 | `readiness` | submission, release, and delivery decisions |
 | `architecture` | structure, boundaries, tradeoffs, and scalability |
-| `code` | diff-first implementation review with regression, validation, and high-risk change analysis |
+| `code` | diff-first implementation review with regression, validation, high-risk change analysis, and stack-specific heuristics |
 | `requirements` | coverage, ambiguity, acceptance criteria, and prioritization |
 | `risk` | security, privacy, compliance, performance, and reliability |
 | `documentation` | clarity, consistency, and handoff quality |
@@ -96,6 +96,14 @@ Use $review to assess this project for completion, risks, and next improvements.
 
 ```text
 Use $review to review this PR in change scope and tell me whether it is safe to merge.
+```
+
+```text
+Use $review to review this TypeScript and React PR in change scope, using stack-specific frontend checks for state, effects, runtime validation, and regression risk.
+```
+
+```text
+Use $review to review this Python change in change scope, focusing on async safety, exception handling, data integrity, and test quality.
 ```
 
 ```text
@@ -157,6 +165,9 @@ review/
   references/
     review-axes.md
     review-code.md
+    review-code-java.md
+    review-code-python.md
+    review-code-typescript-react.md
     review-playbook.md
     review-templates.md
 scripts/

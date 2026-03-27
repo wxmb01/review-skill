@@ -16,6 +16,10 @@ Do not modify files unless the user explicitly asks for fixes, improvements, or 
 Read `references/review-axes.md` when the request is broad, asks whether the project is "done" or "ready", or needs a full audit rather than a narrow code review.
 Read `references/review-playbook.md` when you need scope routing, severity rules, evidence discovery strategy, readiness scoring, anti-shortcut guardrails, or risk subdomains.
 Read `references/review-code.md` when the request is mainly about a PR, diff, commit, implementation quality, regression risk, or actionable code-review feedback.
+When the stack is clear, also read one or more specialized code-review references:
+- `references/review-code-typescript-react.md` for TypeScript, React, and modern frontend review
+- `references/review-code-python.md` for Python services, scripts, and async code
+- `references/review-code-java.md` for Java, Spring-style backends, and JVM review
 Read `references/review-templates.md` when you want a reusable output template such as a diff review, risk register, go or no-go summary, or remediation roadmap.
 
 ## Scope Router
