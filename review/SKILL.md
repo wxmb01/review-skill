@@ -15,6 +15,7 @@ Do not modify files unless the user explicitly asks for fixes, improvements, or 
 
 Read `references/review-axes.md` when the request is broad, asks whether the project is "done" or "ready", or needs a full audit rather than a narrow code review.
 Read `references/review-playbook.md` when you need scope routing, severity rules, evidence discovery strategy, readiness scoring, anti-shortcut guardrails, or risk subdomains.
+Read `references/review-code.md` when the request is mainly about a PR, diff, commit, implementation quality, regression risk, or actionable code-review feedback.
 Read `references/review-templates.md` when you want a reusable output template such as a diff review, risk register, go or no-go summary, or remediation roadmap.
 
 ## Scope Router
@@ -150,6 +151,7 @@ Focus on boundaries, coupling, data flow, tradeoffs, non-functional requirements
 ### Code Review
 
 Focus on correctness, regressions, maintainability, duplication, complexity, unsafe patterns, test gaps, and standards compliance.
+Use the dedicated code review workflow in `references/review-code.md` for `change` scope and for implementation-heavy reviews.
 If the user simply asks for a "review", start here for `change` scope, then widen if architecture, requirements, QA, or readiness gaps dominate.
 
 ### Requirements Review

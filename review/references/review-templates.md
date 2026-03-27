@@ -24,14 +24,38 @@ Use these templates when the user would benefit from a stable deliverable shape 
 ## Change Review
 
 ```md
+## Change Summary
+- what changed
+- why it changed
+
 ## Findings
 - [severity] regression or risk in the change
+
+## Strengths
+- good patterns or safeguards worth preserving
 
 ## Impacted Areas
 - modules, tests, docs, config, rollout
 
 ## Evidence Gaps
 - what should have been checked but was not proven
+
+## Recommendation
+- approve | approve with caveats | changes needed
+```
+
+## Code Review Report
+
+```md
+## Findings
+- [severity] [optional tag] file:line issue, impact, evidence, direct fix
+
+## Strengths
+- concrete good choices worth preserving
+
+## Test And Regression Notes
+- what validation exists
+- what important gaps remain
 
 ## Recommendation
 - approve | approve with caveats | changes needed

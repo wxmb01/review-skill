@@ -15,6 +15,8 @@ Use when the target is a PR, commit, diff, patch set, or recent changes.
 
 Prioritize:
 
+- intent and scope of the change
+- diff size and whether the change should be split
 - regressions
 - unintended side effects
 - compatibility impact
@@ -75,6 +77,7 @@ Start with the smallest set of artifacts that explains the system, then widen on
 2. Inspect nearby tests, configs, docs, and dependent modules.
 3. Trace impact to entrypoints, public interfaces, storage, network boundaries, or user-visible behavior.
 4. Look for missing validation, migration, rollback, or documentation updates.
+5. Verify whether manual review should focus on correctness, safety, and design rather than lint or formatting noise.
 
 ### For Project Scope
 
@@ -107,6 +110,16 @@ Look for:
 - `low`: localized improvement, polish, or maintainability issue
 
 If no blocker or high findings exist, say that explicitly.
+
+### Optional Code Review Tags
+
+Use these only when they help communication:
+
+- `question`: asks for clarification before making a strong claim
+- `praise`: highlights a strong choice worth preserving
+- `nit`: tiny non-blocking suggestion that should never bury important findings
+
+Do not let `question`, `praise`, or `nit` compete with blocker or high-severity findings.
 
 ## Evidence Floor
 
@@ -164,6 +177,14 @@ Do not accept any of these shortcuts:
 - a requirements document exists, therefore the requirements are testable
 
 When in doubt, name the missing evidence directly.
+
+For code review specifically, also avoid these shortcuts:
+
+- the diff is small, therefore it is safe
+- CI is green, therefore the change is correct
+- static analysis warned, therefore the issue is confirmed
+- the code matches the reviewer preference, therefore the design is good
+- a large refactor is justified because "we were already here"
 
 ## Prioritization And Tradeoffs
 
@@ -226,7 +247,9 @@ Deliver:
 
 - severity-ordered findings
 - file references and line numbers when possible
+- code review strengths worth preserving
 - regression and test-gap notes
+- merge recommendation
 - direct remediation suggestions
 
 ### Requirements Review
