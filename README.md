@@ -1,100 +1,93 @@
-![Review Skill Banner](./assets/review-banner.svg)
+<p align="center">
+  <img src="./assets/review-banner.svg" alt="Review Skill banner" width="100%" />
+</p>
 
-# Review Skill
+<p align="center">
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat-square" alt="MIT License" /></a>
+  <a href="https://github.com/wxmb01/review-skill/releases"><img src="https://img.shields.io/github/v/release/wxmb01/review-skill?style=flat-square" alt="Latest release" /></a>
+  <a href="https://github.com/wxmb01/review-skill/stargazers"><img src="https://img.shields.io/github/stars/wxmb01/review-skill?style=flat-square" alt="GitHub stars" /></a>
+</p>
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](./LICENSE)
-[![Release](https://img.shields.io/github/v/release/wxmb01/review-skill?style=flat-square)](https://github.com/wxmb01/review-skill/releases)
-[![Stars](https://img.shields.io/github/stars/wxmb01/review-skill?style=flat-square)](https://github.com/wxmb01/review-skill/stargazers)
+<h1 align="center">Review</h1>
 
-Open review skill for project, code, readiness, architecture, requirements, risk, and documentation review.
+<p align="center"><strong>Evidence-based review for pull requests, whole projects, and technical artifacts.</strong></p>
 
-[English](./README.md) | [简体中文](./README.zh-CN.md)
+<p align="center">
+  Judge completion, readiness, architecture, requirements, implementation quality, risk, and documentation with one open skill.
+</p>
 
-## At a Glance
+<p align="center">
+  <a href="#install-in-10-seconds"><strong>Install</strong></a>
+  ·
+  <a href="https://github.com/wxmb01/review-skill/releases/latest"><strong>Latest Release</strong></a>
+  ·
+  <a href="./README.zh-CN.md"><strong>简体中文</strong></a>
+</p>
 
-`Review` is built for the moments when a normal code review is too narrow.
+> `Review` is built for the moment when a normal code review is too narrow.
 
-It helps answer questions like:
+## Why Teams Use Review
 
-- Is this project actually complete?
-- Is this change safe to merge?
-- Is this release ready?
-- What are the biggest risks?
-- What should be fixed first?
+| Question | What Review gives back |
+| --- | --- |
+| Is this PR safe to merge? | severity-ordered findings, regression thinking, merge readiness |
+| Is this project actually complete? | completion verdict, evidence gaps, next priorities |
+| Is this release ready? | readiness gates, go/no-go summary, operational caveats |
+| Is this design or plan solid enough? | ambiguity review, requirements gaps, tradeoff notes |
 
-Unlike a narrow code-style reviewer, `Review` is designed to judge evidence, completion, readiness, and risk.
-It is read-only by default for review requests.
+Review is read-only by default for review requests. It is designed to assess evidence, not just code style.
 
-## Visual Overview
+## Product Tour
 
 ![Review overview in English](./assets/overview-en.svg)
 
-Download-ready image assets:
+Download-ready overview assets:
 
 - [English overview PNG](./assets/overview-en.png)
 - [Chinese overview PNG](./assets/overview-zh-CN.png)
 
-### Social Preview Assets
+## Three Scopes, One Workflow
 
-These files are ready to use as GitHub social preview images. PNG is recommended for the repository settings page, and SVG source files are included for further editing.
-
-- [English social preview PNG](./assets/social-preview-en.png)
-- [Chinese social preview PNG](./assets/social-preview-zh-CN.png)
-- [English social preview SVG source](./assets/social-preview-en.svg)
-- [Chinese social preview SVG source](./assets/social-preview-zh-CN.svg)
-
-## What It Covers
-
-### Review Scopes
-
-| Scope | Best for | Typical output |
+| Scope | Best for | Typical result |
 | --- | --- | --- |
-| `change` | PRs, commits, diffs, patch sets, uncommitted changes | merge recommendation, regression findings, impacted areas |
-| `project` | Whole repositories, products, systems, delivery-state audits | completion verdict, readiness summary, remediation roadmap |
-| `artifact` | Specs, plans, reports, architecture notes, design documents | ambiguity list, requirements gaps, tradeoff notes |
+| `change` | PRs, commits, diffs, patch sets, uncommitted work | merge recommendation, impacted areas, regression risk |
+| `project` | whole repositories, delivery-state audits, product reviews | completion verdict, readiness summary, remediation roadmap |
+| `artifact` | specs, plans, reports, design documents, architecture notes | ambiguity list, requirements gaps, tradeoff notes |
 
-### Review Modes
+## Why It Feels Different
 
-- `project`
-- `readiness`
-- `architecture`
-- `code`
-- `requirements`
-- `risk`
-- `documentation`
+| Pillar | What it changes |
+| --- | --- |
+| Scope-first routing | change review, project audit, and artifact review do not get flattened into one generic prompt |
+| Evidence floors | findings need proof, not vibes or vague confidence |
+| Readiness gates | `ready` is treated as a claim that must be earned |
+| Severity and risk framing | blocker, high, medium, low plus security, privacy, compliance, performance, and reliability |
+| Reusable deliverables | scorecards, risk registers, gap reports, and roadmaps instead of loose commentary |
 
-## What Makes It Different
+## Review Modes
 
-- Routes by scope before mode, so PR review and full-project audit are treated differently
-- Uses evidence floors and readiness gates instead of vague impressions
-- Supports blocker/high/medium/low severity judgment
-- Splits risk into security, privacy, compliance, performance, and reliability
-- Includes reusable templates for go/no-go reviews, risk registers, requirements gaps, and remediation plans
+| Mode | Best for |
+| --- | --- |
+| `project` | end-to-end repository or product review |
+| `readiness` | submission, release, and delivery decisions |
+| `architecture` | structure, boundaries, tradeoffs, and scalability |
+| `code` | implementation quality, correctness, and maintainability |
+| `requirements` | coverage, ambiguity, acceptance criteria, and prioritization |
+| `risk` | security, privacy, compliance, performance, and reliability |
+| `documentation` | clarity, consistency, and handoff quality |
 
-## Use It When
+## Outputs You Can Expect
 
-- You need more than style feedback
-- You need a completion or readiness verdict
-- You need a diff review with impact and regression thinking
-- You need to review a design document or project plan
-- You need a structured risk or requirements review
+| Output | Why it is useful |
+| --- | --- |
+| severity-ordered findings | see blockers before polish comments |
+| completion verdicts | understand whether work is actually done |
+| readiness scorecards | make submit or release decisions with evidence |
+| risk registers | capture threats, exposure, and mitigation priorities |
+| requirements gap reports | surface missing or unclear scope |
+| remediation roadmaps | turn review into next actions |
 
-## Do Not Use It As
-
-- a replacement for linting
-- a purely cosmetic refactoring assistant
-- proof that a system is safe without real evidence
-- a reason to skip tests, QA, or release checks
-
-## Installation
-
-Install directly from GitHub:
-
-```bash
-npx skills add https://github.com/wxmb01/review-skill --skill review -g -y
-```
-
-## Example Prompts
+## Copy-Paste Prompts
 
 ```text
 Use $review to assess this project for completion, risks, and next improvements.
@@ -109,21 +102,30 @@ Use $review to perform a readiness review and tell me whether this project is re
 ```
 
 ```text
-Use $review to review this design document in artifact scope and identify ambiguity, missing acceptance criteria, and major risks.
+Use $review to inspect this design document in artifact scope and identify ambiguity, missing acceptance criteria, and major risks.
 ```
 
-## Outputs You Can Expect
+## Visual Assets
 
-Depending on the request, the skill can produce:
+Social preview assets for GitHub and social sharing:
 
-- severity-ordered findings
-- completion verdicts
-- readiness gate summaries
-- risk registers
-- requirements gap reports
-- architecture tradeoff notes
-- remediation roadmaps
-- validation plans
+- [English social preview PNG](./assets/social-preview-en.png)
+- [Chinese social preview PNG](./assets/social-preview-zh-CN.png)
+- [English social preview SVG source](./assets/social-preview-en.svg)
+- [Chinese social preview SVG source](./assets/social-preview-zh-CN.svg)
+
+## Install in 10 Seconds
+
+```bash
+npx skills add https://github.com/wxmb01/review-skill --skill review -g -y
+```
+
+## Open Source Workflow
+
+- [Contributing guide](./CONTRIBUTING.md)
+- [Security policy](./SECURITY.md)
+- [Issues](https://github.com/wxmb01/review-skill/issues)
+- [Pull requests](https://github.com/wxmb01/review-skill/pulls)
 
 ## Repository Layout
 
@@ -155,11 +157,6 @@ assets/
   social-preview-zh-CN.png
   social-preview-zh-CN.svg
 ```
-
-## Community
-
-- [Contributing guide](./CONTRIBUTING.md)
-- [Security policy](./SECURITY.md)
 
 ## License
 
