@@ -46,6 +46,13 @@ Download-ready overview assets:
 - [English overview PNG](./assets/overview-en.png)
 - [Chinese overview PNG](./assets/overview-zh-CN.png)
 
+## Intro Video
+
+[![Chinese intro video cover](./assets/review-intro-zh-cover.png)](./assets/review-intro-zh.mp4)
+
+- [Chinese intro video MP4](./assets/review-intro-zh.mp4)
+- [Chinese intro video script](./assets/review-intro-zh-script.md)
+
 ## Three Scopes, One Workflow
 
 | Scope | Best for | Typical result |
@@ -171,6 +178,7 @@ review/
     review-playbook.md
     review-templates.md
 scripts/
+  render_intro_video.py
   sync-to-codex.ps1
 .githooks/
   post-checkout
@@ -183,6 +191,9 @@ assets/
   overview-zh-CN.png
   overview-zh-CN.svg
   review-banner.svg
+  review-intro-zh-cover.png
+  review-intro-zh-script.md
+  review-intro-zh.mp4
   social-preview-en.png
   social-preview-en.svg
   social-preview-zh-CN.png
