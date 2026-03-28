@@ -178,7 +178,6 @@ review/
     review-playbook.md
     review-templates.md
 scripts/
-  render_intro_video.py
   sync-to-codex.ps1
 .githooks/
   post-checkout
@@ -191,9 +190,6 @@ assets/
   overview-zh-CN.png
   overview-zh-CN.svg
   review-banner.svg
-  review-intro-zh-cover.png
-  review-intro-zh-script.md
-  review-intro-zh.mp4
   social-preview-en.png
   social-preview-en.svg
   social-preview-zh-CN.png
